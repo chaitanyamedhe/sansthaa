@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आमचे कोर्सेस - श्री संत हरी हरी बाबा वारकरी शिक्षण संस्था</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            background: url('https://source.unsplash.com/1600x900/?indian-music') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .courses-container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .course-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+        h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">मुख्यपृष्ठ</a></li>
+            <li><a href="about.html">संस्थेची माहिती</a></li>
+            <li><a href="courses.html">कोर्सेस</a></li>
+            <li><a href="gallery.html">गॅलरी</a></li>
+            <li><a href="events.html">कार्यक्रम</a></li>
+            <li><a href="contact.html">संपर्क</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        संस्थेचे प्रशिक्षण
+    </header>
+
+    <section class="courses-container">
+        <div class="course-card">
+            <div class="course-icon">🎤</div>
+            <h3>कीर्तन प्रशिक्षण</h3>
+            <p>पारंपरिक आणि भक्तीगीत गायन तंत्रज्ञानासह कीर्तनाची पवित्र कला शिका.</p>
+        </div>
+        <div class="course-card">
+            <div class="course-icon">🥁</div>
+            <h3>तबला आणि पखवाज</h3>
+            <p>तबला आणि पखवाज वादनाचे ताल आणि लयींचे कौशल्य आत्मसात करा.</p>
+        </div>
+        <div class="course-card">
+            <div class="course-icon">🎶</div>
+            <h3>भजन आणि अभंग</h3>
+            <p>वारकरी परंपरेत खोलवर रुजलेल्या भक्तीमय भजन आणि अभंगांमध्ये तल्लीन व्हा.</p>
+        </div>
+        <div class="course-card">
+            <div class="course-icon">📖</div>
+            <h3>ज्ञानेश्वरी अध्ययन</h3>
+            <p>संत ज्ञानेश्वर महाराजांच्या शिकवणींचे सखोल मार्गदर्शनासह अध्ययन करा.</p>
+        </div>
+        <div class="course-card">
+            <div class="course-icon">🧘‍♂️</div>
+            <h3>योग आणि ध्यान</h3>
+            <p>योग आणि ध्यानाच्या अभ्यासाने मानसिक आणि शारीरिक आरोग्य सुधारा.</p>
+        </div>
+    </section>
+
+</body>
+</html>

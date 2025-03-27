@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संपर्क करा - श्री संत हरी हरी बाबा वारकरी शिक्षण संस्था</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            background: url('https://source.unsplash.com/1600x900/?spiritual,meditation') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+        .contact-container {
+            width: 90%;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .contact-info {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .contact-info h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.8rem;
+        }
+        .contact-info p {
+            margin: 8px 0;
+            font-size: 1.2rem;
+        }
+        .contact-form {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .contact-form h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.8rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #e6b800;
+            outline: none;
+            box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+        }
+        .contact-form button {
+            background: #ffcc00;
+            color: black;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .contact-form button:hover {
+            background: #e6b800;
+            transform: scale(1.05);
+        }
+        .map-container {
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        iframe:hover {
+            transform: scale(1.02);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">मुख्यपृष्ठ</a></li>
+            <li><a href="about.html">संस्थेची माहिती</a></li>
+            <li><a href="courses.html">कोर्सेस</a></li>
+            <li><a href="gallery.html">गॅलरी</a></li>
+            <li><a href="events.html">कार्यक्रम</a></li>
+            <li><a href="contact.html">संपर्क</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        संपर्क करा
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>आमच्याशी संपर्क साधा</h2>
+            <p><strong>📍 पत्ता:</strong> श्री संत हरी हरी बाबा वारकरी शिक्षण संस्था, कोर्टी, महाराष्ट्र, भारत</p>
+            <p><strong>📞 फोन:</strong> +91 9876543210</p>
+            <p><strong>📧 ई-मेल:</strong> info@hariharibabasanstha.com</p>
+            <p><strong>🕒 वेळ:</strong> सोम - शनि: सकाळी ९:०० ते संध्याकाळी ६:००</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>संदेश पाठवा</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="तुमचे नाव" required>
+                <input type="email" name="email" placeholder="तुमचा ई-मेल" required>
+                <textarea name="message" rows="5" placeholder="तुमचा संदेश" required></textarea>
+                <button type="submit">संदेश पाठवा</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-container">
+        <h2 style="text-align: center; margin-bottom: 10px;">📍 आम्हाला Google Maps वर शोधा</h2>
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Shri+Sant+Hari+Hari+Baba+Warkari+Shikshan+Sanstha,Korti,India" allowfullscreen></iframe>
+    </section>
+
+</body>
+</html>
+

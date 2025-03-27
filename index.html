@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री संत हरी हरी बाबा वारकरी शिक्षण संस्था</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+        }
+
+        /* ✅ Navigation Bar */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 15px 0;
+            z-index: 1000;
+            transition: 0.3s;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .logo img {
+            width: 140px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+        .nav-links a:hover {
+            background: #ff9800;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.9);
+            list-style: none;
+            top: 40px;
+            left: 0;
+            width: 200px;
+            padding: 0;
+            border-radius: 5px;
+        }
+        .dropdown-menu li {
+            text-align: left;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: white;
+            transition: 0.3s;
+        }
+        .dropdown-menu a:hover {
+            background: #ff9800;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* ✅ Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('images/sanstha-background.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #030302;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(110, 108, 108, 0.7);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .hero .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        /* ✅ About Sanstha */
+        .about {
+            text-align: center;
+            padding: 50px;
+            background: #eee;
+        }
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* ✅ Quick Navigation Cards */
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 50px 0;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(43, 42, 42, 0.2);
+            width: 250px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .card h3 {
+            margin-top: 10px;
+        }
+        .card .btn-small {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* ✅ Events Section */
+        .events-home {
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* ✅ Call to Action */
+        .cta {
+            text-align: center;
+            padding: 50px;
+            background: #ff9800;
+            color: white;
+        }
+        .cta .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: white;
+            color: #ff9800;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ✅ Hero Section -->
+    <div class="hero">
+        <h1>श्री संत हरी हरी बाबा वारकरी शिक्षण संस्था, कोर्टी</h1>
+        <p>ज्ञान, भक्ती आणि परंपरेच्या वाटेवर...</p>
+        <a href="about.html" class="btn">संस्थेची माहिती</a>
+    </div>
+
+    <!-- ✅ Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/zdz2t5bb.png" alt="Sanstha Logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">मुख्यपृष्ठ</a></li>
+                    <li><a href="about.html">संस्थेची माहिती</a></li>
+                    <li><a href="courses.html">संस्थेचे प्रशिक्षण</a></li>
+                    <li><a href="gallery.html">गॅलरी</a></li>
+                    <li><a href="events.html">कार्यक्रम</a></li>
+                    <li><a href="contact.html">संपर्क</a></li>
+        
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ✅ About Sanstha Section -->
+    <div class="about">
+        <h2>संस्थेचे ध्येय व हेतू</h2>
+        <p>
+            कोर्टी परिसरामध्ये श्री संत हरी हरी बाबांच्या वास्तव्याने पावन झालेली भुमी आहे. 
+            त्यांच्या विचारधारेच्या प्रेरणेतून शिवकृपा बहुउद्देशीय श्री संत हरी हरी बाबा वारकरी शिक्षण संस्था सुरू केली आहे.  
+            आमच्या संस्थेचा हेतू मुलांना व्यसनांपासून दूर ठेवून त्यांच्यावर चांगले संस्कार करणे हा आहे.  
+            येथे हरीपाठ, प्रवचन, कीर्तन, भजन, गीता, गाथा, ज्ञानेश्वरी, गायन, मृदंग, तबला, योगासने  
+            यांसारख्या पारंपरिक वारकरी शिक्षणाचा समावेश आहे.
+        </p>
+    </div>
+    <!-- ✅ Quick Links Section -->
+     <div class="quick-links">
+        <div class="card">
+            <img src="images/tabla.jpg" alt="Courses">
+            <h3>संस्थेचे प्रशिक्षण</h3>
+            <p>संगीत, कीर्तन, अभंग वाचन...</p>
+            <a href="courses.html" class="btn-small">अधिक वाचा</a>
+        </div>
+        <div class="card">
+            <img src="images/karyakram.jpg" alt="Events">
+            <h3>कार्यक्रम</h3>
+            <p>आगामी कार्यक्रम आणि महोत्सव...</p>
+            <a href="events.html" class="btn-small">अधिक वाचा</a>
+        </div>
+    </div>
+
+    <!-- ✅ Events Section -->
+    <div class="events-home">
+        <h2>आगामी कार्यक्रम</h2>
+        <p>📅 गुरुपौर्णिमा उत्सव – २१ जुलै २०२५</p>
+        <p>📅 संत ज्ञानेश्वर जयंती – १५ ऑगस्ट २०२५</p>
+        <a href="events.html" class="btn">संपूर्ण माहिती</a>
+    </div>
+
+
+    <!-- ✅ Call to Action -->
+    <div class="cta">
+        <h2>संस्थेचे विद्यार्थी बना!</h2>
+        <p>आमच्या आध्यात्मिक आणि सांस्कृतिक शिक्षणात सहभागी व्हा.</p>
+        <a href="contact.html" class="btn">आत्ता संपर्क साधा</a>
+    </div>
+
+</body>
+</html>
